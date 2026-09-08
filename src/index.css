@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&family=Unica+One&display=swap");
+
+.card{
+  border: 1px solid rgb(88, 88, 88);
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  max-width: 250px;
+  height:320px;
+  text-align: center;
+  font-family: "Smooch Sans";
+  background-color: rgb(61, 60, 60);
+}
+
+.card .cardImage{
+  width: 200px;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 0px;
+  box-shadow: 1px 5px 10px 2px black;
+}
+
+.card .title{
+  font-style: bold;
+  margin: 1;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.header {
+  text-align: center;
+  font-family: "Smooch Sans";
+  font-size: 35px;
+  color: rgb(238, 235, 235);
+  text-shadow: 5px 5px 1px rgb(17, 16, 16);
+  padding: 0px;
+}
+
+.footer {
+  text-align: right;
+  font-family: "Smooch Sans";
+  color: rgb(238, 235, 235);
+  text-shadow: 5px 5px 1px rgb(17, 16, 16);
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image: url("./assets/math.jpg");
+    background-size: cover;
+    background-position: center;
+
+    filter: blur(5px);
+    transform: scale(1);
+
+    z-index: -1;
+}
+.cardLink {
+  color: inherit;
+  text-decoration: none;
+}
+
+.homePage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  box-sizing: border-box;
+  padding: 32px 16px;
+}
+
+.solverPage { min-height: 100vh; display: grid; place-items: center; padding: 32px 16px; color: white; font-family: "Smooch Sans", sans-serif; }
+.solverCard { width: min(680px, 100%); box-sizing: border-box; padding: 36px; border: 1px solid rgb(88, 88, 88); border-radius: 18px; background: rgb(61, 60, 60); box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.6); text-align: center; }
+.solverCard h1 { margin: 18px 0 4px; font-size: 2.5rem; }
+.equation { margin: 0 0 28px; font-size: 1.55rem; }
+.backLink { color: white; text-decoration: none; font-size: 1.2rem; }
+.backLink:hover, .choiceButtons a:hover { text-decoration: underline; }
+.coefficientGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(90px, 1fr)); gap: 16px; margin-bottom: 24px; }
+.coefficientGrid label { display: grid; gap: 6px; font-size: 1.3rem; text-transform: uppercase; }
+.coefficientGrid input { width: 100%; box-sizing: border-box; padding: 10px; border: 1px solid #aaa; border-radius: 8px; font-size: 1rem; }
+.solverCard button, .choiceButtons a { display: inline-block; padding: 11px 22px; border: 0; border-radius: 8px; background: #e8e8e8; color: #1e1e1e; font: inherit; font-size: 1.25rem; cursor: pointer; text-decoration: none; }
+.result { margin-top: 24px; padding: 14px; border-radius: 8px; background: rgba(0, 0, 0, 0.28); font-size: 1.3rem; }
+.result p { margin: 5px 0; }
+.choiceButtons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
